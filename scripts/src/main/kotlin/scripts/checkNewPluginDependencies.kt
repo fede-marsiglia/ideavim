@@ -32,7 +32,7 @@ val knownPlugins = listOf(
   "com.github.dankinsoid.multicursor",
   "com.joshestein.ideavim-quickscope",
 
-   "cc.implicated.intellij.plugins.bunny", // I don't want to include this plugin in the list of IdeaVim plugins as I don't understand what this is for
+  "cc.implicated.intellij.plugins.bunny", // I don't want to include this plugin in the list of IdeaVim plugins as I don't understand what this is for
 )
 
 suspend fun main() {
@@ -44,7 +44,9 @@ suspend fun main() {
   println(output)
   if (knownPlugins != output) {
     val newPlugins = (output - knownPlugins).map { it to (getPluginLinkByXmlId(it) ?: "Can't find plugin link") }
-    val removedPlugins = (knownPlugins - output.toSet()).map { it to (getPluginLinkByXmlId(it) ?: "Can't find plugin link") }
+    val removedPlugins = (knownPlugins - output.toSet()).map {
+      it to (getPluginLinkByXmlId(it) ?: "Can't find plugin link")
+    }
     error(
       """
         

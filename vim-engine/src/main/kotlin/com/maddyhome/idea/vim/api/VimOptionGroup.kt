@@ -126,13 +126,13 @@ public interface VimOptionGroup {
 /**
  * Checks if option is set to its default value
  */
-public fun <T: VimDataType> VimOptionGroup.isDefaultValue(option: Option<T>, scope: OptionScope): Boolean =
+public fun <T : VimDataType> VimOptionGroup.isDefaultValue(option: Option<T>, scope: OptionScope): Boolean =
   getOptionValue(option, scope) == option.defaultValue
 
 /**
  * Resets the option back to its default value
  */
-public fun <T: VimDataType> VimOptionGroup.resetDefaultValue(option: Option<T>, scope: OptionScope) {
+public fun <T : VimDataType> VimOptionGroup.resetDefaultValue(option: Option<T>, scope: OptionScope) {
   setOptionValue(option, scope, option.defaultValue)
 }
 

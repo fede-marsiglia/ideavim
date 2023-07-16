@@ -225,7 +225,7 @@ class RegistersCommandTest : VimTestCase() {
       """.trimMargin(),
     )
   }
-  
+
   @Test
   fun `test clipboard registers are not duplicated`() {
     configureByText("<caret>line 0 ")

@@ -62,7 +62,8 @@ public object IjOptions {
       IjOptionConstants.ideavimsupportValues
     )
   )
-  @JvmField public val ideawrite: StringOption =
+  @JvmField
+  public val ideawrite: StringOption =
     addOption(StringOption("ideawrite", "ideawrite", "all", IjOptionConstants.ideaWriteValues))
   public val lookupkeys: StringListOption = addOption(
     StringListOption(

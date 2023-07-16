@@ -17,7 +17,7 @@ import com.maddyhome.idea.vim.options.OptionScope
  * buffer (document) or window (editor).
  */
 @Suppress("unused", "SpellCheckingInspection")
-public open class GlobalOptions(scope: OptionScope = OptionScope.GLOBAL): OptionsPropertiesBase(scope) {
+public open class GlobalOptions(scope: OptionScope = OptionScope.GLOBAL) : OptionsPropertiesBase(scope) {
   public val clipboard: StringListOptionValue by optionProperty(Options.clipboard)
   public var digraph: Boolean by optionProperty(Options.digraph)
   public var gdefault: Boolean by optionProperty(Options.gdefault)
@@ -61,7 +61,7 @@ public open class GlobalOptions(scope: OptionScope = OptionScope.GLOBAL): Option
  * will be the same as in the global scope.
  */
 @Suppress("unused")
-public open class EffectiveOptions(scope: OptionScope.LOCAL): GlobalOptions(scope) {
+public open class EffectiveOptions(scope: OptionScope.LOCAL) : GlobalOptions(scope) {
   public val iskeyword: StringListOptionValue by optionProperty(Options.iskeyword)
   public val matchpairs: StringListOptionValue by optionProperty(Options.matchpairs)
   public val nrformats: StringListOptionValue by optionProperty(Options.nrformats)

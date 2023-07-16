@@ -13,7 +13,7 @@ import com.maddyhome.idea.vim.api.VimOptionGroup
 import com.maddyhome.idea.vim.api.VimOptionGroupBase
 import com.maddyhome.idea.vim.options.OptionScope
 
-internal interface IjVimOptionGroup: VimOptionGroup {
+internal interface IjVimOptionGroup : VimOptionGroup {
   /**
    * Return an accessor for options that only have a global value
    */

@@ -51,6 +51,7 @@ internal class OptionsState : ApplicationUsagesCollector() {
 
     private val IDEAJOIN = BooleanEventField(IjOptions.ideajoin.name)
     private val IDEAMARKS = BooleanEventField(IjOptions.ideamarks.name)
+
     // TODO: This looks like the wrong name!!
     private val IDEAREFACTOR = EventFields.String(IjOptions.ideamarks.name, IjOptionConstants.ideaRefactorModeValues.toList())
     private val IDEAPUT = BooleanEventField(OptionConstants.clipboard_ideaput)
