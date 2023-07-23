@@ -100,8 +100,10 @@ public object Options {
   public val digraph: ToggleOption = addOption(ToggleOption("digraph", "dg", false))
   public val gdefault: ToggleOption = addOption(ToggleOption("gdefault", "gd", false))
   public val history: UnsignedNumberOption = addOption(UnsignedNumberOption("history", "hi", 50))
+
   @JvmField
   public val hlsearch: ToggleOption = addOption(ToggleOption("hlsearch", "hls", false))
+
   @JvmField
   public val ignorecase: ToggleOption = addOption(ToggleOption("ignorecase", "ic", false))
   public val incsearch: ToggleOption = addOption(ToggleOption("incsearch", "is", false))
@@ -166,6 +168,7 @@ public object Options {
   public val showmode: ToggleOption = addOption(ToggleOption("showmode", "smd", true))
   public val sidescroll: NumberOption = addOption(NumberOption("sidescroll", "ss", 0))
   public val sidescrolloff: NumberOption = addOption(NumberOption("sidescrolloff", "siso", 0))
+
   @JvmField
   public val smartcase: ToggleOption = addOption(ToggleOption("smartcase", "scs", false))
   public val startofline: ToggleOption = addOption(ToggleOption("startofline", "sol", true))
